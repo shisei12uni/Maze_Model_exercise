@@ -27,6 +27,7 @@ office_for_MIU404 = {
     }
 }
 
+"""
 #print (office_for_MIU404.keys()),
 #print (office_for_MIU404.values())
 print ("Mameji" in office_for_MIU404)
@@ -43,3 +44,8 @@ for rooms in office_for_MIU404:
     total_capacity = total_capacity + office_for_MIU404[rooms]["capacity"]
     # print(office_for_MIU404[rooms]["capacity"]) #if it's numbers don't need to use len()
 print(total_capacity)
+"""
+
+print({rooms: len(office_for_MIU404[rooms]["residents"]) 
+       for rooms in office_for_MIU404
+       if len(office_for_MIU404[rooms]["residents"] )})
